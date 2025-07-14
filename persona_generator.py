@@ -4,37 +4,6 @@ from dotenv import load_dotenv
 
 load_dotenv()  # Load GROQ_API_KEY from .env file
 
-'''def build_prompt(data):
-    comment_blocks = [c for c in data["comments"] if len(c.split()) > 5][:15]
-    submission_blocks = [p for p in data["submissions"] if len(p.split()) > 5][:10]
-    text_blocks = comment_blocks+submission_blocks
-    text_input = "\n".join(text_blocks)
-
-    prompt = f"""
-You are a behavioral analyst who builds personas based on Reddit activity.
-
-Given the following Reddit comments and posts, generate a user persona with these traits:
-- Assumed Name (if available)
-- Estimated Age Range
-- Personality Traits
-- Interests and Hobbies
-- Beliefs and Opinions
-- Writing Style / Tone
-- Preferred Discussion Topics
-
-For each trait, cite 1–2 relevant comments or posts as evidence.
-
-
-
-Reddit Activity:
-{text_input}
-
-If the user has no comments or posts just return that no data found.
-"""
-    return prompt.strip()'''
-
-
-
 def generate_persona(data):
     api_key = os.getenv("GROQ_API_KEY")
     if not api_key:
