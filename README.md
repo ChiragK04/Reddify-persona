@@ -1,6 +1,6 @@
 # Reddit Persona Analyzer
 
-AI-powered tool to generate clean, structured persona profiles from Reddit user activity.
+AI-powered pipeline to generate clean, structured persona profiles from Reddit user activity.
 
 ## 🚀 Overview:
 
