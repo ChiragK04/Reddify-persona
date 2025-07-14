@@ -3,4 +3,4 @@ transformers
 torch
 sentencepiece
 nltk
-dotenv
+python-dotenv
