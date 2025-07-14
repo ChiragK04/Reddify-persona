@@ -1,0 +1,6 @@
+praw
+transformers
+torch
+sentencepiece
+nltk
+dotenv

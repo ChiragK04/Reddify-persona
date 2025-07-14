@@ -1,0 +1,8 @@
+# Don't track sensitive files or system files
+.env
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+.DS_Store
